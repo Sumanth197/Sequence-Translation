@@ -123,7 +123,9 @@ plt.show()
 #model = load_model('saved_model')
 preds = model.predict_classes(testX.reshape((testX.shape[0], testX.shape[1])))
 
-def get_word(n, tokenizer):  
+#To see the translations from the predictions
+
+'''def get_word(n, tokenizer):  
       for word, index in tokenizer.word_index.items():                       
           if index == n: 
               return word 
@@ -149,4 +151,4 @@ for i in preds:
 pred_df = pd.DataFrame({'actual' : test[:,0], 'predicted' : 
                         preds_text})
 
-pred_df.sample(15)
+pred_df.sample(15)'''
